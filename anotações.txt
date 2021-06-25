@@ -1,0 +1,46 @@
+comandos 
+
+    yarn init -y
+    yarn add typescript -D
+    yarn tsc --init
+    yarn tsc
+    yarn add express
+    yarn add @types/express -D
+    yarn tsc
+    yarn add ts-node-dev -D
+    configura script pra rodar 
+
+    "scripts": {
+        "dev": "ts-node-dev src/server.ts"
+      },
+
+    yarn dev
+    
+    sudo yarn add typeorm reflect-metadata sqlite3 
+    yarn dev
+
+    yarn typeorm migration:create -n CreateUsers(Cria o ts para configuração da tabela)
+    yarn typeorm migration:run (executa migration e cria a tabela no banco)
+
+    yarn add express-async-errors
+    yarn typeorm migration:create -n CreateTags
+
+/**
+ * GET => BUSCAR UMA INFORMAÇÃO
+ * POST => INSERIR(CRIAR) UMA INFORMAÇÃO
+ * PUT => ALTERAR UMA INFORMAÇÃO
+ * DELETE => REMOVER UM DADO
+ * PATCH => ALTERAR IMA INFORMAÇÃO ESPECÍFICA  
+ */
+
+/**
+ *  TIPOS DE PARÂMETROS
+ * ROUTES PARAMS => http://localhost:3000/produtos/654646
+ * 
+ * QUERY PARAMS =>  http://localhost:3000/produtos?name=teclado&description=tecladobom
+ * 
+ * BODY PARAMS =>   {
+ *  "name": "teclado",
+ *  "description": "teclado"
+ * }
+ */
